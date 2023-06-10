@@ -19,8 +19,8 @@ public class Validate {
 			
 			PreparedStatement pst = con.prepareStatement("SELECT * FROM student WHERE email=? AND pass=?");
 			
-			pst.setString(2,email);
-			pst.setString(4, pass);
+			pst.setString(1,email);
+			pst.setString(2, pass);
 			
 			ResultSet rs = pst.executeQuery();
 			
